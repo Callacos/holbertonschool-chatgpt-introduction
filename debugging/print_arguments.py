@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 import sys
 
-# Vérifie si des arguments sont fournis
-if len(sys.argv) == 1:
-    print("Usage: ./script.py <arguments>")
+if len(sys.argv) < 2:
+    print("Usage: python script.py arg1 arg2 ...")
     sys.exit(1)
 
-# Affiche chaque argument
-for arg in sys.argv[1:]:
-    print(arg)
+for i in range(1, len(sys.argv)):
+    print(sys.argv[i])
