@@ -81,7 +81,7 @@ class Minesweeper:
                         break
                     if self.check_win():
                         self.print_board(reveal=True)
-                        print("Congratulations! You won!")
+                        print("Congratulations! You've won the game.!")
                         break
                 elif act == 'f':
                     self.toggle_flag(x, y)
@@ -93,4 +93,3 @@ class Minesweeper:
 if __name__ == "__main__":
     game = Minesweeper()
     game.play()
-    
